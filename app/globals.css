@@ -6,12 +6,13 @@
   --bg-boton-primary: #3B82F8;
   --bg-boton-secondary: #4338CA;
   --bg-hover-boton: #1D4ED8;
+  --border-boton: #1D4ED8;
   --bg-container-primary: #3B82F8;
   --bg-container-secondary: #4338CA;
-  --bg-container-: #3B82F8;
   --bg-primary: #F9FAFB;
   --bg-secondary: #EFF6FF;
   --text-primary: #3B82F8;
+  --text-secondary: #4338CA;
   --text-hover-primary: #3B82F8;
 }
 
@@ -23,6 +24,8 @@
   --color-foreground: var(--foreground);
   --color-bg-primary: var(--bg-primary);
   --color-bg-second: var(--bg-secondary);
+  --color-border-boton: var(--border-boton);
+  --color-text-secondary: var(--text-secondary);
   --color-bg-container-primary: var(--bg-container-primary);
   --color-bg-container-secondary: var(--bg-container-secondary);
   --color-text-primary: var(--text-primary);
