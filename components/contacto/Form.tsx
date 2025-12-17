@@ -12,7 +12,7 @@ export default function Form() {
     "Emergencias",
     "Otros",
   ];
-  
+
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
