@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaCheckCircle, FaPaperPlane } from "react-icons/fa";
 
 export default function Form() {
-  const servicesOptions = [
+  const servicesOptions: string[] = [
     "Información General",
     "Cita de Valoración",
     "Tour de Instalaciones",
@@ -12,13 +12,20 @@ export default function Form() {
     "Emergencias",
     "Otros",
   ];
+  type Contacto = {
+    nombre: string,
+    email: string,
+    telefono: string,
+    asunto: string,
+    mensaje: string
+  }
 
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<Contacto>({
     nombre: "",
     email: "",
     telefono: "",
     asunto: "",
-    mensaje: "",
+    mensaje: ""
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
