@@ -1,4 +1,5 @@
 "use client";
+import { Contacto } from "@/interface";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaCheckCircle, FaPaperPlane } from "react-icons/fa";
@@ -12,13 +13,6 @@ export default function Form() {
     "Emergencias",
     "Otros",
   ];
-  type Contacto = {
-    nombre: string,
-    email: string,
-    telefono: string,
-    asunto: string,
-    mensaje: string
-  }
 
   const [formData, setFormData] = useState<Contacto>({
     nombre: "",
